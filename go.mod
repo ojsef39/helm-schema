@@ -1,4 +1,4 @@
-module github.com/dadav/helm-schema
+module github.com/ojsef39/helm-schema
 
 go 1.23.1
 
@@ -7,6 +7,7 @@ require (
 	github.com/dadav/go-jsonpointer v0.0.0-20240918181927-335cbee8c279
 	github.com/deckarep/golang-set/v2 v2.7.0
 	github.com/magiconair/properties v1.8.9
+	github.com/norwoodj/helm-docs v1.14.2
 	github.com/santhosh-tekuri/jsonschema/v6 v6.0.1
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.8.1
@@ -26,7 +27,6 @@ require (
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
-	github.com/norwoodj/helm-docs v1.14.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sagikazarmark/locafero v0.4.0 // indirect

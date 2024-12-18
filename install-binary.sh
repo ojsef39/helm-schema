@@ -4,7 +4,7 @@
 
 PROJECT_NAME="helm-schema"
 BINARY_NAME="helm-schema"
-PROJECT_GH="dadav/$PROJECT_NAME"
+PROJECT_GH="ojsef39/$PROJECT_NAME"
 PLUGIN_MANIFEST="plugin.yaml"
 
 # Convert HELM_BIN and HELM_PLUGIN_DIR to unix if cygpath is

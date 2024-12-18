@@ -14,7 +14,7 @@ import (
 	"strings"
 
 	"github.com/dadav/go-jsonpointer"
-	"github.com/dadav/helm-schema/pkg/util"
+	"github.com/ojsef39/helm-schema/pkg/util"
 	"github.com/norwoodj/helm-docs/pkg/helm"
 	"github.com/santhosh-tekuri/jsonschema/v6"
 	log "github.com/sirupsen/logrus"

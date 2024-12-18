@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/dadav/helm-schema/pkg/chart"
-	"github.com/dadav/helm-schema/pkg/util"
+	"github.com/ojsef39/helm-schema/pkg/chart"
+	"github.com/ojsef39/helm-schema/pkg/util"
 	"gopkg.in/yaml.v3"
 )
 

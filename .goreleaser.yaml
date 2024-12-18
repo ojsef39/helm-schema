@@ -18,8 +18,8 @@ builds:
       - arm
       - arm64
     goarm:
-      - '6'
-      - '7'
+      - "6"
+      - "7"
     goos:
       - linux
       - windows
@@ -43,18 +43,18 @@ checksum:
   name_template: checksums.txt
 
 snapshot:
-  version_template: '{{ .Tag }}-next'
+  version_template: "{{ .Tag }}-next"
 
 dockers:
   - goos: linux
     goarch: amd64
     image_templates:
-      - ghcr.io/dadav/helm-schema:{{ .Tag }}
-      - ghcr.io/dadav/helm-schema:latest
+      - ghcr.io/ojsef39/helm-schema:{{ .Tag }}
+      - ghcr.io/ojsef39/helm-schema:latest
     build_flag_templates:
       - --label=org.opencontainers.image.created={{.Date}}
-      - --label=org.opencontainers.image.authors=dadav
-      - --label=org.opencontainers.image.url=https://github.com/dadav/helm-schema
+      - --label=org.opencontainers.image.authors=ojsef39
+      - --label=org.opencontainers.image.url=https://github.com/ojsef39/helm-schema
       - --label=org.opencontainers.image.title={{.ProjectName}}
       - --label=org.opencontainers.image.revision={{.FullCommit}}
       - --label=org.opencontainers.image.version={{.Version}}
@@ -63,5 +63,5 @@ changelog:
   sort: asc
   filters:
     include:
-      - '^feat:'
-      - '^fix:'
+      - "^feat:"
+      - "^fix:"
