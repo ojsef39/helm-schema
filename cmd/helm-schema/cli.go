@@ -63,8 +63,6 @@ func newCommand(run func(cmd *cobra.Command, args []string) error) (*cobra.Comma
 	cmd.PersistentFlags().
 		BoolP("no-dependencies", "n", false, "don't analyze dependencies")
 	cmd.PersistentFlags().
-		String("dependencies", "", "Comma-separated list of dependencies to process")
-	cmd.PersistentFlags().
 		BoolP("add-schema-reference", "r", false, "add reference to schema in values.yaml if not found")
 	cmd.PersistentFlags().StringP("log-level", "l", "info", logLevelUsage)
 	cmd.PersistentFlags().
@@ -73,6 +71,8 @@ func newCommand(run func(cmd *cobra.Command, args []string) error) (*cobra.Comma
 		StringP("output-file", "o", "values.schema.json", "jsonschema file path relative to each chart directory to which jsonschema will be written")
 	cmd.PersistentFlags().
 		StringSliceP("skip-auto-generation", "k", []string{}, "comma separated list of fields to skip from being created by default (possible: title, description, required, default, additionalProperties)")
+	cmd.PersistentFlags().
+		StringSliceP("dependencies-filter", "i", []string{}, "only generate schema for specified dependencies (comma-separated list of dependency names)")
 
 	viper.AutomaticEnv()
 	viper.SetEnvPrefix("HELM_SCHEMA")

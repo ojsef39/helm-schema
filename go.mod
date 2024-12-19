@@ -3,9 +3,7 @@ module github.com/ojsef39/helm-schema
 go 1.23.1
 
 require (
-	github.com/Masterminds/semver/v3 v3.3.1
 	github.com/dadav/go-jsonpointer v0.0.0-20240918181927-335cbee8c279
-	github.com/deckarep/golang-set/v2 v2.7.0
 	github.com/magiconair/properties v1.8.9
 	github.com/norwoodj/helm-docs v1.14.2
 	github.com/santhosh-tekuri/jsonschema/v6 v6.0.1
@@ -17,6 +15,7 @@ require (
 
 require (
 	github.com/Masterminds/goutils v1.1.1 // indirect
+	github.com/Masterminds/semver/v3 v3.3.1 // indirect
 	github.com/Masterminds/sprig/v3 v3.2.3 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/google/uuid v1.4.0 // indirect
@@ -39,10 +38,10 @@ require (
 	github.com/subosito/gotenv v1.6.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
-	golang.org/x/crypto v0.21.0 // indirect
+	golang.org/x/crypto v0.31.0 // indirect
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
-	golang.org/x/sys v0.18.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/text v0.21.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	helm.sh/helm/v3 v3.15.2 // indirect
 )
